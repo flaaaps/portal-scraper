@@ -3,6 +3,10 @@ var router = express.Router();
 
 const puppeteer = require('puppeteer');
 
+router.get('/', (req, res) => {
+  res.send({ success: true });
+});
+
 router.get('/:day/:hour?', async (req, res) => {
   const { day, hour } = req.params;
 
