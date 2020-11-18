@@ -14,7 +14,7 @@ router.get('/:day/:hour?', async (req, res) => {
   });
   const page = await browser.newPage();
   try {
-    await page.goto(`http://127.0.0.1:5500/index.html`);
+    await page.goto(`https://cdn.icnet.dev/test/epf/index.html`);
     const selector = '#asam_content > div > table > tbody > tr';
 
     const result = await page.$$eval(selector, (trs) =>
