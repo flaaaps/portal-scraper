@@ -43,7 +43,7 @@ function format(data, day, hour) {
     for (let i = 1; i <= 10; i++) {
       if (data[i][day]) all.push(data[i][day]);
     }
-    console.log(all);
+
     return { day: data[0][day], subjects: all, hours: all.length };
   }
   return { day: data[0][day], lesson: data[hour][0], subject: data[hour][day] };
